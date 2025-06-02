@@ -86,7 +86,8 @@ nav ul {
     background-color: var(--white);
     padding: .5em 2em;
     border: 3px solid var(--accentone);
-    width: 85%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .aboutme-content {
@@ -98,6 +99,8 @@ nav ul {
 
 #aboutme h2 {
     margin: 0;
+    margin-bottom: .5rem;
+
 }
 
 .leftcards {
@@ -105,21 +108,22 @@ nav ul {
     border: 3px solid var(--accentone);
     margin: 1.2em 0 0 0;
     padding-top: .5em;
-    padding-bottom: .5;
-    width: 96.5%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .leftcards h3 {
     margin: 0;
     padding-left: 1em;
     padding-bottom: .3em;
+    font-size: 1.2em;
 }
 
 .insidecard {
     background-color: var(--white);
     color: black;
     margin: 0;
-    padding: 1em;
+    padding: .5em 1em;
 }
 
 .logo {
