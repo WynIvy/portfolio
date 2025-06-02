@@ -197,6 +197,20 @@ nav ul {
     margin: auto;
 }
 
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    background: var(--white);
+    border: 3px solid var(--accenttwo);
+    border-radius: 0.5em;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0;
+}
+
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -206,14 +220,32 @@ nav ul {
     gap: 1em;
     height: 100%;
     width: 100%;
+    margin: 0;
 }
 
 .projicon {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
+    border: none;
+    margin: 0;
+    display: block;
 }
 
+.small {
+    font-size: 1rem;
+    margin: 0;
+    padding: .3rem;
+
+}
+
+.description {
+    font-size: 1rem;
+    background: var(--accentone);
+    display: flex;
+    justify-content: center;
+    margin: .3rem 0;
+}
 i {
     font-size: 3em;
 }
