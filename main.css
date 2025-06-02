@@ -73,10 +73,11 @@ nav ul {
 }
 
 #left {
-    display: inline-block;
+    display: flex;
     flex-direction: column;
     width: 40vw;
     padding: 2em;
+    margin: 0;
     overflow: hidden;
 }
 
@@ -139,4 +140,8 @@ nav ul {
     align-items: center;
     align-content: center;
     gap: 2em;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
