@@ -1,0 +1,125 @@
+:root {
+    --background-color-one: #048ABF;
+    --background-color-two: #0477BF;
+    --white: #F2F2F2;
+    --accentone: #F2C166;
+    --accenttwo: #F28705;
+}
+
+.stylish-regular {
+    font-family: "Stylish", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.roboto{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color-one);
+    background-image: linear-gradient(var(--background-color-two) .1em, transparent .1em), linear-gradient(90deg, var(--background-color-two) .1em, transparent .1em);
+    background-size: 2em 2em;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0477BF;
+    padding: 0;
+    color: var(--white);
+    border-bottom: 3px solid var(--accentone);
+}
+
+header h1 {
+    padding-left: .8em;
+    font-family: "Stylish", sans-serif;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    gap: 1em;
+    padding: 0 1.6em;
+}
+/*left content */
+
+
+#profilephoto {
+    width: 200px;
+    border: 2px solid var(--background-color-two);
+}
+
+#left {
+    display: inline-block;
+    flex-direction: column;
+    width: 40vw;
+    padding: 2em;
+    overflow: hidden;
+}
+
+#aboutme {
+    display: inline-block;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: .5em 2em;
+    border: 3px solid var(--accentone);
+}
+
+.aboutme-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 2em;
+}
+
+#aboutme h2 {
+    margin: 0;
+}
+
+.leftcards {
+    background-color: var(--background-color-two);
+    border: 3px solid var(--accentone);
+    margin: 1.2em 0 0 0;
+    padding-top: .5em;
+    padding-bottom: .5;
+}
+
+.leftcards h3 {
+    margin: 0;
+    padding-left: 1em;
+    padding-bottom: .3em;
+}
+
+.insidecard {
+    background-color: var(--white);
+    color: black;
+    margin: 0;
+    padding: 1em;
+}
+
+.logo {
+    max-width: 100px;
+    margin: .5em;
+    max-height: 50px;
+    align-items: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 2em;
+}
