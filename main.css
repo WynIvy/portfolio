@@ -79,16 +79,19 @@ nav ul {
     padding: 2em;
     margin: 0;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 #aboutme {
     display: inline-block;
     flex-direction: column;
     background-color: var(--white);
-    padding: .5em 2em;
+    padding: .5em;
     border: 3px solid var(--accentone);
     width: 100%;
     box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
 }
 
 .aboutme-content {
@@ -96,6 +99,7 @@ nav ul {
     flex-direction: row;
     align-items: center; 
     gap: 2em;
+    overflow: hidden;
 }
 
 #aboutme h2 {
@@ -111,6 +115,7 @@ nav ul {
     padding-top: .5em;
     width: 100%;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .leftcards h3 {
@@ -125,6 +130,7 @@ nav ul {
     color: black;
     margin: 0;
     padding: .5em 1em;
+    overflow: hidden;
 }
 
 .logo {
