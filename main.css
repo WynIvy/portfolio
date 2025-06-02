@@ -32,8 +32,9 @@ body {
 
 header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
     background-color: #0477BF;
     padding: 0;
     color: var(--white);
@@ -41,9 +42,17 @@ header {
 }
 
 header h1 {
-    padding-left: .8em;
+    padding: 0 0 0 2em;
     font-family: "Stylish", sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+    line-height: 1;
+}
+
+nav {
+    width: 100%;
+    margin-bottom: .5em;
 }
 
 nav ul {
@@ -52,6 +61,8 @@ nav ul {
     margin: 0;
     gap: 1em;
     padding: 0 1.6em;
+    justify-content: flex-end;
+    font-size: 1.2em;
 }
 /*left content */
 
@@ -75,6 +86,7 @@ nav ul {
     background-color: var(--white);
     padding: .5em 2em;
     border: 3px solid var(--accentone);
+    width: 85%;
 }
 
 .aboutme-content {
@@ -94,6 +106,7 @@ nav ul {
     margin: 1.2em 0 0 0;
     padding-top: .5em;
     padding-bottom: .5;
+    width: 96.5%;
 }
 
 .leftcards h3 {
